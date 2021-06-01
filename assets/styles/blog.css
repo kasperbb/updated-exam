@@ -1,0 +1,134 @@
+section {
+	max-width: 321px;
+	margin: auto;
+}
+
+h1 {
+	color: var(--primary-3);
+}
+
+section.main {
+	margin: auto;
+}
+
+section.main .top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section.main .top #filter {
+	margin: 1rem 0;
+}
+
+section.main .wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+section.main .wrapper form {
+	display: flex;
+	flex-direction: column;
+	min-width: 250px;
+}
+
+section.main .wrapper form fieldset.categories {
+	margin: 1rem auto;
+}
+
+section.main .wrapper form fieldset.categories legend {
+	margin-bottom: 1rem;
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+section.main .wrapper form fieldset.categories .category {
+	margin-bottom: .5rem;
+}
+
+#results {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	justify-items: center;
+	gap: 16px;
+}
+
+.loader {
+	margin: 2rem 0;
+}
+
+.post {
+	box-shadow: var(--shadow);
+	background: white !important;
+	color: black !important;
+}
+
+.post .content a {
+	color: black;
+}
+
+.preloader {
+	border: 4px solid var(--primary-3);
+	border-left-color: transparent;
+}
+
+button:hover .preloader-button {
+	border: 2px solid var(--primary-3);
+	border-left-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+	section {
+		max-width: 1064px;
+	}
+
+	section.main {
+		align-items: flex-start;
+		margin: auto 3rem;
+	}
+
+	section.main h1 {
+		text-align: left;
+	}
+
+	section.main .top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin: 1rem 0;
+	}
+
+	section.main .top h1 {
+		margin: 0;
+		margin-bottom: 1rem;
+	}
+
+	section.main .wrapper {
+		flex-direction: row;
+	}
+
+	#results {
+		width: 100%;
+		justify-items: flex-start;
+	}
+
+	section.main button {
+		margin-left: 250px;
+	}
+
+	button {
+		margin: 2rem 0;
+	}
+
+	section.main .wrapper form fieldset.categories {
+		margin: 0;
+	}
+}
+
+@media only screen and (min-width: 1164px) {
+	section.main {
+		max-width: 1064px;
+		margin: auto;
+	}
+}

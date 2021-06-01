@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="I'm John Doe, the creator of this blog and an amateur astronomer. I write about news and anything that interests me about space.">
+
+    <title>OSVIS - About</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/search.css">
+    <link rel="stylesheet" href="assets/styles/about.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/global.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">OSVIS</a>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <div class="search">
+                <div class="preloader-search"></div>
+                <div class="search__input">
+                    <label for="search" class="hide-element">Search</label>
+                    <input type="text" placeholder="Search" id="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </header>
+    <div id="search-results"></div>
+    <section class="breadcrumbs">
+        <a href="index.html">Home</a> / <span>About</span>
+    </section>
+    <section class="main">        
+        <h1>About me</h1>
+        <div class="wrapper">
+            <img src="assets/img/about.jpg" alt="Silhouette photograph of a person under the stars">
+            <div class="content">
+                <h2>Hi, I'm John Doe</h2>
+                <p>
+                    Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you
+                    ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands
+                    of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every
+                    creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father,
+                    hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every
+                    "supreme leader," every saint and sinner in the history of our species lived there--on a mote of dust suspended in a
+                    sunbeam.
+                </p>
+                <p>
+                    The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near future, to which
+                    our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the moment the Earth is where we make our
+                    stand.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="content">
+            &#169; Copyright 2021 <strong>Kasper Bø Bjørnø</strong>. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSVIS - </title>
+    <meta name="description"
+        content="Our Small View Into Space is a blog focused news and other interesting topics about space.">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/modal.css">
+    <link rel="stylesheet" href="assets/styles/search.css">
+    <link rel="stylesheet" href="assets/styles/post.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/global.js" defer></script>
+    <script src="assets/js/components/post.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
+    <script src="assets/js/modal.js" defer></script>
+    <script src="assets/js/post.js" defer></script>
+    <script src="assets/js/comment.js" defer></script>
+</head>
+
+<body>
+    <div id="modal">
+        <span class="close">&times;</span>
+        <img class="content modal-image" id="img">
+        <div class="caption"></div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="index.html">OSVIS</a>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <div class="search">
+                <div class="preloader-search"></div>
+                <div class="search__input">
+                    <label for="search" class="hide-element">Search</label>
+                    <input type="text" placeholder="Search" id="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </header>
+    <div id="search-results"></div>
+    <section class="breadcrumbs">
+        <a href="index.html">Home</a> / <a href="blog.html">Blog</a> /
+    </section>
+    <section class="main"></section>
+    <section class="comments">
+        <h3>Comments</h3>
+        <div id="comments">
+            <div class="preloader"></div>
+        </div>
+    </section>
+    <section class="comment">
+        <h3>Leave a comment</h3>
+        <form>
+            <div class="form-item">
+                <label for="email">Email <span class="info">(must be a valid email address)</span></label>
+                <input type="email" id="email" name="email">
+                <span class="error">Must be a valid email address</span>
+            </div>
+            <div class="form-item">
+                <label for="name">Name <span class="info">(minimum 5 characters)</span></label>
+                <input type="text" id="name" name="name">
+                <span class="error">Must be more than 5 characters long</span>
+            </div>
+            <div class="form-item">
+                <label for="message">Message <span class="info">(minimum 25 characters)</span></label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <span class="error">Must be more than 25 characters long</span>
+            </div>
+            <span class="form-status-message"></span>
+            <div class="button-wrapper">
+                <div class="tooltip">Please fill out the entire form before posting.</div>
+                <button type="button" aria-label="Post comment">Post</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

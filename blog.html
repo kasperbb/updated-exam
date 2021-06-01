@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSVIS - Blog</title>
+    <meta name="description"
+        content="Our Small View Into Space is a blog focused news and other interesting topics about space.">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/search.css">
+    <link rel="stylesheet" href="assets/styles/post-component.css">
+    <link rel="stylesheet" href="assets/styles/blog.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/global.js" defer></script>
+    <script src="assets/js/components/post.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
+    <script src="assets/js/blog.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">OSVIS</a>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <div class="search">
+                <div class="preloader-search"></div>
+                <div class="search__input">
+                    <label for="search" class="hide-element">Search</label>
+                    <input type="text" placeholder="Search" id="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </header>
+    <div id="search-results"></div>
+    <section class="breadcrumbs">
+        <a href="index.html">Home</a> / <span>Blog</span>
+    </section>
+    <section class="main">
+        <div class="top">
+            <h1>Blog</h1>
+            <label for="filter" class="hide-element">Sort by</label>
+            <select name="filter" id="filter">
+                <option value="desc">Newest first</option>
+                <option value="asc">Oldest first</option>
+            </select>
+        </div>
+        <div class="wrapper">
+            <form>
+                <fieldset class="categories">
+                    <legend>
+                        Categories
+                    </legend>
+                </fieldset>
+            </form>
+            <div id="results">
+                <div class="preloader"></div>
+            </div>
+        </div>
+        <button aria-label="Load more">Load more</button>
+    </section>
+    <footer>
+        <div class="content">
+            &#169; Copyright 2021 <strong>Kasper Bø Bjørnø</strong>. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

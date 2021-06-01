@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Small View Into Space is a blog focused news and other interesting topics about space.">
+
+    <title>OSVIS - Home</title>
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/modal.css">
+    <link rel="stylesheet" href="assets/styles/search.css">
+    <link rel="stylesheet" href="assets/styles/post-component.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/styles/carousel.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/global.js" defer></script>
+    <script src="assets/js/components/post.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
+    <script src="assets/js/carousel.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">OSVIS</a>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <div class="search">
+                <div class="preloader-search"></div>
+                <div class="search__input">
+                    <label for="search" class="hide-element">Search</label>
+                    <input type="text" placeholder="Search" id="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </header>
+    <div id="search-results"></div>
+    <section class="hero">
+        <div class="wrapper">
+            <h1>Our Small View Into Space</h1>
+            <!-- <h1>The Personal Blog of John Watson</h1> -->
+            <p>
+                It has been said that astronomy is a humbling and character-building experience. There is perhaps no better
+                demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our
+                responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've
+                ever known. <span class="attribution">&#8213; Carl Sagan</span>
+            </p>
+        </div>
+    </section>
+    <section class="posts">
+        <h2>Latest Posts</h2>
+        <div id="wrapper">
+            <button id="prev" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <title>Right arrow, go next in caoursel</title>
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                </svg>
+            </button>
+            <div id="carousel">
+                <div id="content">
+                    <div class="preloader big"></div>
+                </div>
+            </div>
+            <button id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <title>Left arrow, go back in caoursel</title>
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="content">
+            &#169; Copyright 2021 <strong>Kasper Bø Bjørnø</strong>. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
